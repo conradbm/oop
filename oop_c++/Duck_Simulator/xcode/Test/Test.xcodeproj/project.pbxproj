@@ -17,7 +17,22 @@
 		654B364E1EAF9E8B00053E83 /* RedDuck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654B364C1EAF9E8B00053E83 /* RedDuck.cpp */; };
 		654B36521EAF9EFD00053E83 /* FlyWithWings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654B36501EAF9EFD00053E83 /* FlyWithWings.cpp */; };
 		654B36561EAFA01500053E83 /* QuackWithLove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654B36541EAFA01500053E83 /* QuackWithLove.cpp */; };
+		88362C651EB00445001078D2 /* RocketshipDuck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88362C631EB00445001078D2 /* RocketshipDuck.cpp */; };
+		88362C681EB00461001078D2 /* QuackWithAttitude.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88362C661EB00461001078D2 /* QuackWithAttitude.cpp */; };
+		88362C6C1EB00477001078D2 /* FlyWithRocketExplosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88362C6A1EB00477001078D2 /* FlyWithRocketExplosion.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		88362C6E1EB00547001078D2 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyPlist\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		654B361F1EAF8D9100053E83 /* CopyFiles */ = {
@@ -52,6 +67,12 @@
 		654B36511EAF9EFD00053E83 /* FlyWithWings.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FlyWithWings.hpp; sourceTree = "<group>"; };
 		654B36541EAFA01500053E83 /* QuackWithLove.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuackWithLove.cpp; sourceTree = "<group>"; };
 		654B36551EAFA01500053E83 /* QuackWithLove.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = QuackWithLove.hpp; sourceTree = "<group>"; };
+		88362C631EB00445001078D2 /* RocketshipDuck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RocketshipDuck.cpp; sourceTree = "<group>"; };
+		88362C641EB00445001078D2 /* RocketshipDuck.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RocketshipDuck.hpp; sourceTree = "<group>"; };
+		88362C661EB00461001078D2 /* QuackWithAttitude.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuackWithAttitude.cpp; sourceTree = "<group>"; };
+		88362C671EB00461001078D2 /* QuackWithAttitude.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = QuackWithAttitude.hpp; sourceTree = "<group>"; };
+		88362C6A1EB00477001078D2 /* FlyWithRocketExplosion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlyWithRocketExplosion.cpp; sourceTree = "<group>"; };
+		88362C6B1EB00477001078D2 /* FlyWithRocketExplosion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FlyWithRocketExplosion.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +150,7 @@
 		654B36431EAF9DBC00053E83 /* Unique */ = {
 			isa = PBXGroup;
 			children = (
+				88362C621EB00429001078D2 /* RocketshipDuck */,
 				654B364B1EAF9E7300053E83 /* RedDuck */,
 				654B36491EAF9E5B00053E83 /* RubberDuck */,
 			);
@@ -174,6 +196,8 @@
 		654B36481EAF9E3200053E83 /* Concrete */ = {
 			isa = PBXGroup;
 			children = (
+				88362C6D1EB0047C001078D2 /* FlyWithRocketExplosion */,
+				88362C691EB00467001078D2 /* QuackWithAttitude */,
 				654B36531EAF9FFC00053E83 /* QuackWithLove */,
 				654B364F1EAF9EE500053E83 /* FlyWithWings */,
 				654B36471EAF9E1400053E83 /* QuackNoWay */,
@@ -227,6 +251,33 @@
 			name = QuackWithLove;
 			sourceTree = "<group>";
 		};
+		88362C621EB00429001078D2 /* RocketshipDuck */ = {
+			isa = PBXGroup;
+			children = (
+				88362C631EB00445001078D2 /* RocketshipDuck.cpp */,
+				88362C641EB00445001078D2 /* RocketshipDuck.hpp */,
+			);
+			name = RocketshipDuck;
+			sourceTree = "<group>";
+		};
+		88362C691EB00467001078D2 /* QuackWithAttitude */ = {
+			isa = PBXGroup;
+			children = (
+				88362C661EB00461001078D2 /* QuackWithAttitude.cpp */,
+				88362C671EB00461001078D2 /* QuackWithAttitude.hpp */,
+			);
+			name = QuackWithAttitude;
+			sourceTree = "<group>";
+		};
+		88362C6D1EB0047C001078D2 /* FlyWithRocketExplosion */ = {
+			isa = PBXGroup;
+			children = (
+				88362C6A1EB00477001078D2 /* FlyWithRocketExplosion.cpp */,
+				88362C6B1EB00477001078D2 /* FlyWithRocketExplosion.hpp */,
+			);
+			name = FlyWithRocketExplosion;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,6 +290,7 @@
 				654B361F1EAF8D9100053E83 /* CopyFiles */,
 			);
 			buildRules = (
+				88362C6E1EB00547001078D2 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -293,7 +345,10 @@
 				654B363D1EAF98C500053E83 /* RubberDuck.cpp in Sources */,
 				654B36251EAF8D9200053E83 /* main.cpp in Sources */,
 				654B364E1EAF9E8B00053E83 /* RedDuck.cpp in Sources */,
+				88362C651EB00445001078D2 /* RocketshipDuck.cpp in Sources */,
 				654B36341EAF8FAF00053E83 /* QuackBehavior.cpp in Sources */,
+				88362C681EB00461001078D2 /* QuackWithAttitude.cpp in Sources */,
+				88362C6C1EB00477001078D2 /* FlyWithRocketExplosion.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -381,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -420,6 +475,7 @@
 				654B362A1EAF8D9200053E83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
