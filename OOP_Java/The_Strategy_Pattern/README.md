@@ -21,6 +21,14 @@ relationship, like a duck "has a" fly behavior or quack behavior.
 </li>
 </ul>
 
+<p> Design Principle #3 </p>
+<ul>
+<li> Favor composition over inheritence.</li>
+<li> When you can, use composition (those interfaces that can 
+change on runtime) than traditional inheritence; this typically 
+makes things more flexible.</li>
+</ul>
+
 <p> The take-a-ways from this pattern for me are the hybrid use of both 
 inheritence and polymorphism with the mixture of interfaces that will 
 vary from instance to instance. An interface is a public set of actions 
