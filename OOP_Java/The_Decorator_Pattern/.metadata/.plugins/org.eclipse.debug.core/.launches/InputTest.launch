@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/The_Decorator_Pattern/src/CH04/designpatterns/decorator/io/InputTest.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="CH04.designpatterns.decorator.io.InputTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="The_Decorator_Pattern"/>
+</launchConfiguration>
