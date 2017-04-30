@@ -15,6 +15,7 @@ class TextDocument {
     char *text;
     char *docName;
 public:
+    TextDocument() : text(nullptr), docName(nullptr) {}
     void SetText(char *otherText);
     char *GetText();
     void SetDocName(char *newName);

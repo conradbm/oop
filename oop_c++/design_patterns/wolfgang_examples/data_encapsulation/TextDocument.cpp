@@ -9,12 +9,11 @@
 #include <iostream>
 #include "TextDocument.h"
 #include "string.h"
+
 using namespace std;
 
 void TextDocument::SetText(char *otherText){
-    
-    cout << otherText << endl;
-    
+        
     if (text)
         delete text;          //free the memory
     
