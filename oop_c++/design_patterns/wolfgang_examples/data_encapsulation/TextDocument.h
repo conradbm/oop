@@ -12,8 +12,9 @@
 #include <stdio.h>
 
 class TextDocument {
-    char *text;
-    char *docName;
+    
+    char *text;     // Always initialize pointers and
+    char *docName;  // members in your constructor
 public:
     TextDocument() : text(nullptr), docName(nullptr) {}
     void SetText(char *otherText);
