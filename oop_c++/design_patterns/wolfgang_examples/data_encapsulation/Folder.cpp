@@ -18,7 +18,7 @@ void Folder::Init(char *folderName){
     }
     
     SetFolderName(folderName);
-    docs = new vector<TextDocument *>;
+    docs = new std::vector<TextDocument *>;
     
 }
 
@@ -39,16 +39,16 @@ void Folder::AppendDoc(TextDocument *td){
     docs->push_back(td);
 }
 
-void Folder::RemoveDoc(TextDocument *td){
-    docs->remove(td);
+void Folder::RemoveDoc(TextDocument *td){    
+    docs->erase(std::remove(docs->begin(), docs->end(), td), docs->end());
 }
 
 TextDocument *Folder::GetDoc(char *name){
     for (std::vector<TextDocument *>::iterator it = docs->begin();
          it != docs->end();
          ++it) {
-        if (strcmp(*it->GetDocName(), name) == 0) {
-            return td;
+        if (strcmp((*it)->GetDocName(), name) == 0) {
+            return *it;
         }
     }
     return 0;

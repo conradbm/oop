@@ -8,7 +8,7 @@
 
 
 #include <iostream>
-#include <string>
+#include "string.h"
 #include "TextDocument.h"
 #include "Folder.h"
 
@@ -19,10 +19,8 @@ int main(void){
     TextDocument *sampleDoc;
     sampleDoc = new TextDocument;
     
-    char *myChar = new char[3];
-    myChar[0]='a';
-    myChar[1]='b';
-    myChar[2]='\0';
-    sampleDoc->SetText(myChar);
+    
+    sampleDoc->SetText((char *)"some str"); // I have no idea why there is a linker error here.
+    
     return 0;
 }

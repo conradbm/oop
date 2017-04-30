@@ -6,12 +6,16 @@
 //
 //
 
+#include <iostream>
 #include "TextDocument.h"
 #include "string.h"
+using namespace std;
 
 void TextDocument::SetText(char *otherText){
     
-    if (text != 0)
+    cout << otherText << endl;
+    
+    if (text)
         delete text;          //free the memory
     
     text = new char[strlen(otherText)+1];   // +1 for the null char
@@ -25,7 +29,7 @@ char *TextDocument::GetText(){
 void TextDocument::SetDocName(char *name){
     
     if (docName != 0)
-        delete TdocName;
+        delete docName;
     
     docName = new char[strlen(name) + 1];   // +1 for the  \0 terminator
     strcpy(docName, name);                  // docName <- name
