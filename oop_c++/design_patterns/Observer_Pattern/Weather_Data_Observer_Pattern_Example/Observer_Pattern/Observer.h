@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-class Observer { // Class Interface -- meant to be inherited
+class Observer { // Abstract Class -- meant to be inherited, not created
     
 public:
     virtual void update(float temp, float humidity, float pressure){}; // dumby implementation
