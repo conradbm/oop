@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include "Observer.h"
 
-class Subject { // Interface Class -- meant to be inherited
+class Subject { // Abstract Class -- meant to be inherited, not created
 
 public:
     virtual void registerObserver(Observer*){}; // dummy implementation
